@@ -1,4 +1,4 @@
-package DesignPatterns;
+package DesignPatterns.Builder;
 
 // Handles complex constructors
 // Large number of parameters

@@ -1,4 +1,4 @@
-import DesignPatterns.Builder;
+import DesignPatterns.Prototype.Prototype;
 
 public class Driver {
     public static void main(String[] args) {
@@ -15,5 +15,7 @@ public class Driver {
         Builder greeting2 = builder2.build();
         System.out.println(greeting2.getString1() + " " + greeting2.getString2() + " "+ greeting2.getString3());
          */
+
+        // Prototype pt = new Prototype();
     }
 }
