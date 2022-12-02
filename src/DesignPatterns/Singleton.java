@@ -1,11 +1,11 @@
 package DesignPatterns;
 
-public class MySingleton {
+public class Singleton {
 
     // Volatile makes it more thread safe
-    private static volatile MySingleton instance = null;
+    private static volatile Singleton instance = null;
 
-    private MySingleton(){
+    private Singleton(){
         // Private constructor
         if(instance!=null){
             // Stops against reflection
@@ -14,13 +14,13 @@ public class MySingleton {
     }
 
     // Call get instance to get the Singleton
-    public static MySingleton getInstance(){
+    public static Singleton getInstance(){
         // Static thread safe implementation
         if(instance == null){
-            synchronized (MySingleton.class){
+            synchronized (Singleton.class){
                 if(instance == null){
                     // Will only happen if its creating one time
-                    instance = new MySingleton();
+                    instance = new Singleton();
                 }
             }
         }
