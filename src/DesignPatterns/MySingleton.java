@@ -3,7 +3,7 @@ package DesignPatterns;
 public class MySingleton {
 
     // Volatile makes it more thread safe
-    private static volatile MySingleton instance;
+    private static volatile MySingleton instance = null;
 
     private MySingleton(){
         // Private constructor
